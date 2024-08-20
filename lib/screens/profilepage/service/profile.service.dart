@@ -2,12 +2,8 @@
 import 'package:chat_u/screens/profilepage/models/follow.body.dart';
 import 'package:chat_u/screens/profilepage/models/follow.res.dart';
 import 'package:chat_u/screens/profilepage/models/profile.model.dart';
-import 'package:chat_u/screens/profilepage/models/unfollow.res.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
-
-import 'dart:convert';
-
 part 'profile.service.g.dart';
 
 @RestApi(baseUrl: 'http://165.232.185.159:8080/')

@@ -9,6 +9,7 @@ import 'package:chat_u/screens/profilepage/models/follow.body.dart';
 import 'package:chat_u/screens/profilepage/models/follow.res.dart';
 import 'package:chat_u/screens/profilepage/models/profile.model.dart';
 import 'package:chat_u/screens/profilepage/service/profile.service.dart';
+import 'package:chat_u/screens/settting/views/setting.page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -255,7 +256,19 @@ class _ProfilePageState extends State<ProfilePage> {
                                                   color: Colors.black54,
                                                   fontSize: 17)),
                                         ],
-                                      )
+                                      ),
+                                      Expanded(child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.end,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: IconButton(onPressed: (){
+                                              Navigator.push(context, CupertinoModalPopupRoute(builder: (context) => const SettingPage()));
+                                            }, icon: const Icon(Icons.settings, color: Colors.black, size: 25,)),
+                                          )
+                                        ],
+                                      )),
                                     ],
                                   ),
                                 ),

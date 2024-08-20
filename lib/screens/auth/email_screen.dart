@@ -1,5 +1,6 @@
 import 'package:chat_u/screens/auth/components/round_button.dart';
 import 'package:chat_u/screens/auth/last_name.dart';
+import 'package:chat_u/screens/auth/profile.create.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -70,7 +71,7 @@ class _EmailScreenState extends State<EmailScreen> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => LastNameScreen()));
+                          builder: (context) => const ProfileCreate()));
                 },
                 child: RoundButton(
                   title: 'Next',
