@@ -31,7 +31,7 @@ class _EmailScreenState extends State<EmailScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
-                "Choose Now",
+                "Confirm Password",
                 textAlign: TextAlign.start,
                 style: GoogleFonts.poppins(
                   fontSize: size.height * 0.050,
