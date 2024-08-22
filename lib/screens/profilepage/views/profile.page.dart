@@ -129,7 +129,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                                   image: NetworkImage(
                                                       profileData!.userProfile
                                                           .profilepick),
-                                                  fit: BoxFit.fill),
+                                                  fit: BoxFit.cover),
                                               borderRadius:
                                                   BorderRadius.circular(500)),
                                         ),

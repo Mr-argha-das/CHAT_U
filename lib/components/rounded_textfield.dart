@@ -28,8 +28,8 @@ class RoundedTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: height ?? 50.0, // Use default height if not specified
-      child: TextField(
+
+      child: TextFormField(
         controller: controller,
         obscureText: obscureText,
         autofocus: autoFocus,
@@ -47,6 +47,12 @@ class RoundedTextField extends StatelessWidget {
               vertical: (height ?? 50.0) / 2 -
                   12), // Adjust vertical padding based on height
         ),
+        validator: (value){
+          if(value == null || value.isEmpty){
+            return "This Field required";
+          }
+
+        },
       ),
     );
   }
